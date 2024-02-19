@@ -6,7 +6,7 @@ import Pagination from "./components/Pagination";
 function App() {
   const [data, setData] = useState([]);
   const [currentPage,setCurrentPage] = useState(1);
-  const [postsPerPage,setPostsPerPage] = useState(5);
+  const [postsPerPage,setPostsPerPage] = useState(7);
   useEffect(() => {
     Axios.get("https://dummyjson.com/products").then((response) => {
       // console.log(response.data.products);
